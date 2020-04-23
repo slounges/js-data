@@ -1,10 +1,10 @@
 # js-data
 
 
-#Description
+##Description
 This repo is for the javascript and data visualization project.
 
-#MIT Liscence
+##MIT Liscence
 
 Copyright (c) [2020] [Shannon Lounges]
 
