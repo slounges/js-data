@@ -6,7 +6,7 @@ new Chart (document.getElementById('barChart'), {
 				{
 				    label:'Gold Medals (hundreds)',
 					data: ['315', '203', '107'],
-					backgroundColor: ['#3e95cd', '#8e5ea2', '#3cba9f'],
+					backgroundColor: ['#FFEBA7', '#7DBEF5', '#FF5D32'],
 				}
 
 			]
@@ -18,15 +18,15 @@ new Chart (document.getElementById('barChart'), {
 		}
 
 });
-new Chart (document.getElementById('barCharttwo'), {
-		type: 'bar',
+new Chart (document.getElementById('pieChart'), {
+		type: 'pie',
 		data:  {
 			labels: ['Men', 'Women'],
 			datasets: [
 				{
 				    label:'Gold Medals (hundreds)',
 					data: ['386', '230'],
-					backgroundColor: ['#FF8B4B', '#45EFF5'],
+					backgroundColor: ['#A9E86D', '#DB8DFF'],
 				}
 
 			]
@@ -44,14 +44,39 @@ new Chart(document.getElementById('lineChart'),{
 		labels: ['Biathlon', 'Bobsleigh', 'Curling', 'Ice Hockey','Skating', 'Skiing'],
 		datasets: [
 			{
-				label: 'Canadian Medals',
+				label: 'Canada',
 				data: ['3', '22', '50', '351', '179', '40'],
 				fill: false,
-				borderColor: '#3e95cd',
+				borderColor: 'gold',
 			}
 
 
 		]
+	}
+
+});
+
+new Chart(document.getElementById('lineChart2'),{
+	type: 'line',
+	data: {
+		labels: ['1924', '1928', '1932', '1948','1952', '1960', '1964', '1968', '1976', '1984', '1992', '1994', '1998', '2002', '2006', '2010', '2014'],
+		datasets: [
+			{
+				label: 'Canada',
+				data: ['9', '12', '14', '18', '16', '3', '4', '1', '1', '2', '5', '3', '14', '53', '29', '68', '63'],
+				fill: false,
+				borderColor: 'red',
+			}
+
+
+		]
+	}, 
+	options: {
+		title:{
+			display: true,
+			text: 'Gold Medal Wins from 1924-2014'
+		}
+		
 	}
 
 });
